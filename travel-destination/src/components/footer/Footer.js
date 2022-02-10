@@ -1,8 +1,20 @@
 import classes from "./Footer.module.css";
+import facebook from "../../assets/facebook.png";
+import instagram from "../../assets/Instagram.png";
 
 const Footer = () => {
   return (
-    <footer className={classes.footer}>A Porject by Karam Al-Qinneh</footer>
+    <footer className={classes.footer}>
+      <h3>A Porject by Karam Al-Qinneh&copy;</h3>
+      <div>
+        <a href="#">
+          <img src={facebook} />
+        </a>
+        <a href="#">
+          <img src={instagram} />
+        </a>
+      </div>
+    </footer>
   );
 };
 
