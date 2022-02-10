@@ -1,0 +1,20 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 20rem;
+  height: 28rem;
+  background-color: #33415c;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px 2px #888888;
+  overflow: scroll;
+  margin: 1.5rem;
+}
+
+.card img {
+  width: 20rem;
+  height: 14rem;
+}
