@@ -1,8 +1,7 @@
 import classes from "./Tours.module.css";
-import data from "../data/db.json";
 
-const Tours = () => {
-  let travelDestinations = data.map((ele) => {
+const Tours = (props) => {
+  let travelDestinations = props.data.map((ele) => {
     return (
       <li className={classes.card} key={ele.id}>
         <h1>{ele.name}</h1>
