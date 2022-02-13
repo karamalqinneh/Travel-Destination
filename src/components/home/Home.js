@@ -2,11 +2,11 @@ import Header from "../header/Header";
 import Tours from "../tours/Tours";
 import Footer from "../footer/Footer";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <>
       <Header></Header>
-      <Tours></Tours>
+      <Tours data={props.data}></Tours>
       <Footer></Footer>
     </>
   );
