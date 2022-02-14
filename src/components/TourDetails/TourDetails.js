@@ -30,7 +30,6 @@ const Card = styled.div`
   & .data p ${(props) => (!props.showFullText ? "desc" : "")} {
     grid-area: 2 / 1 / 2 / 3;
     display: -webkit-box;
-    max-width: 400px;
     height: 80px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -43,6 +42,7 @@ const Card = styled.div`
 
   & .data p {
     grid-area: 2 / 1 / 2 / 3;
+    margin-top: 10%;
   }
 
   & .data button {
