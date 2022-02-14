@@ -1,5 +1,6 @@
 import classes from "./Header.module.css";
 import logoImage from "../../assets/logo.png";
+import Navbar from "../navbar/Navbar";
 
 const Header = () => {
   return (
@@ -8,9 +9,7 @@ const Header = () => {
         <img src={logoImage} alt="logo" className={classes.img} />
         <h1 className={classes.header}>Travel Destinations</h1>
       </div>
-      <nav>
-        <a href="#">Home</a>
-      </nav>
+      <Navbar />
     </header>
   );
 };

@@ -1,8 +1,13 @@
 import Home from "./components/home/Home";
-import data from "./components/data/db.json";
+import data from "./data/db.json";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  return <Home data={data}></Home>;
+  return (
+    <BrowserRouter>
+      <Home data={data} />;
+    </BrowserRouter>
+  );
 }
 
 export default App;
